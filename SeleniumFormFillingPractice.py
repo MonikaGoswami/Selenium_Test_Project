@@ -4,9 +4,12 @@ Created on Mon Sep 23 17:10:12 2019
 @author: monikasingh
 """
 
+import sys
 from selenium import webdriver
 
+sys.path.append('/usr/local/lib/python3.6/site-packages')
 driver=webdriver.Chrome('/Users/monikasingh/Downloads/chromedriver')
+
 driver.get('https://www.techlistic.com/p/selenium-practice-form.html')
 driver.find_element_by_name('firstname').send_keys('Monika')
 driver.find_element_by_name('lastname').send_keys('Goswami')
