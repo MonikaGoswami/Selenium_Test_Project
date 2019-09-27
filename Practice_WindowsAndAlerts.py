@@ -27,9 +27,8 @@ driver.close()
 driver.switch_to.window(driver.window_handles[0])
 driver.find_element_by_css_selector('#content > div:nth-child(2) > div:nth-child(2) > div > div.wpb_raw_code.wpb_content_element.wpb_raw_html > div > p:nth-child(5) > button').click()
 driver.switch_to.window(driver.window_handles[1])
-time.sleep(2)
-#el=driver.find_element_by_xpath('/html/body')
-#print(el.text())
+time.sleep(2)   #Just to see next click
+#driver.find_element_by_xpath('/html/body').text    #TO get text from the website
 driver.close()
 
 driver.switch_to.window(driver.window_handles[0])                                 
